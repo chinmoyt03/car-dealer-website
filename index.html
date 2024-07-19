@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDealer Website</title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team-mem.css">
+    <link rel="stylesheet" href="cube.css">
+    <link rel="stylesheet" href="ham.css">
+    <link rel="stylesheet" href="welcome.css">
+
+
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <nav class="max-w-[1200px]  mx-auto  hidden lg:flex justify-between items-center py-[18px] border-b-[1px] border-[#eee]">
+        <h1 class="text-md">Welcome to Autodealer Car Service</h1>
+        <div class="flex gap-4 items-center">
+           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" color="#666" height="22" width="22" xmlns="http://www.w3.org/2000/svg" style="color: rgb(102, 102, 102);">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+           </svg>
+           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#666" height="22" width="22" xmlns="http://www.w3.org/2000/svg" style="color: rgb(102, 102, 102);">
+              <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+           </svg>
+           <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" color="#666" height="22" width="22" xmlns="http://www.w3.org/2000/svg" style="color: rgb(102, 102, 102);">
+              <g></g>
+              <path d="M8.301 6.422c0.437 0 0.769-0.161 1.006-0.484 0.181-0.237 0.265-0.617 0.265-1.12v-1.66c0-0.503-0.084-0.873-0.265-1.11-0.238-0.321-0.57-0.483-1.006-0.483-0.428 0-0.76 0.161-0.995 0.483-0.181 0.238-0.266 0.608-0.266 1.111v1.66c0 0.503 0.085 0.873 0.266 1.12 0.235 0.322 0.567 0.483 0.995 0.483zM7.893 2.988c0-0.436 0.133-0.654 0.408-0.654 0.285 0 0.408 0.218 0.408 0.654v1.992c0 0.437-0.123 0.664-0.408 0.664-0.275 0-0.408-0.228-0.408-0.664v-1.992zM10.35 6.071c-0.048-0.143-0.075-0.37-0.075-0.711v-3.738h0.863v3.481c0 0.2 0 0.313 0.010 0.333 0.019 0.133 0.085 0.208 0.199 0.208 0.17 0 0.35-0.133 0.54-0.408v-3.614h0.863v4.734h-0.863v-0.522c-0.341 0.398-0.663 0.588-0.978 0.588-0.275 0-0.474-0.113-0.559-0.351zM13.633 11.811v0.436h-0.854v-0.436c0-0.427 0.143-0.646 0.427-0.646 0.284 0.001 0.427 0.219 0.427 0.646zM4.354 1.774c-0.208-0.588-0.416-1.186-0.617-1.774h1.007l0.673 2.495 0.645-2.495h0.968l-1.148 3.785v2.571h-0.948v-2.571c-0.086-0.465-0.276-1.129-0.58-2.011zM15.283 8.785c-0.171-0.75-0.788-1.3-1.518-1.385-1.746-0.19-3.511-0.19-5.266-0.19s-3.52 0-5.256 0.19c-0.738 0.085-1.346 0.635-1.526 1.385-0.237 1.062-0.247 2.22-0.247 3.32 0 1.091 0 2.257 0.247 3.32 0.171 0.75 0.788 1.3 1.518 1.376 1.745 0.199 3.51 0.199 5.265 0.199s3.52 0 5.266-0.199c0.729-0.076 1.337-0.626 1.518-1.376 0.237-1.062 0.247-2.229 0.247-3.32-0.001-1.1-0.001-2.258-0.248-3.32zM5.483 9.743h-1.014v5.398h-0.949v-5.398h-0.997v-0.892h2.96v0.892zM8.045 15.141h-0.845v-0.512c-0.342 0.389-0.664 0.579-0.968 0.579-0.274 0-0.474-0.114-0.55-0.351-0.048-0.142-0.076-0.361-0.076-0.692v-3.709h0.845v3.453c0 0.2 0 0.304 0.009 0.333 0.020 0.132 0.086 0.199 0.199 0.199 0.172 0 0.352-0.132 0.541-0.398v-3.586h0.845v4.684zM11.271 13.737c0 0.437-0.020 0.749-0.086 0.948-0.104 0.342-0.342 0.522-0.674 0.522-0.303 0-0.598-0.171-0.883-0.522v0.456h-0.843v-6.29h0.843v2.059c0.275-0.342 0.57-0.512 0.883-0.512 0.332 0 0.57 0.18 0.674 0.531 0.066 0.19 0.086 0.502 0.086 0.939v1.869zM14.477 12.959h-1.698v0.825c0 0.437 0.143 0.654 0.437 0.654 0.209 0 0.332-0.113 0.38-0.341 0.009-0.047 0.019-0.237 0.019-0.579h0.863v0.124c0 0.275 0 0.465-0.019 0.55-0.020 0.189-0.096 0.36-0.199 0.512-0.229 0.332-0.579 0.503-1.024 0.503-0.446 0-0.779-0.161-1.025-0.484-0.18-0.228-0.275-0.598-0.275-1.101v-1.641c0-0.503 0.086-0.863 0.266-1.101 0.247-0.323 0.579-0.484 1.016-0.484 0.428 0 0.759 0.161 1.005 0.484 0.172 0.237 0.257 0.597 0.257 1.101v0.978zM10.426 11.801v2.002c0 0.427-0.124 0.635-0.37 0.635-0.143 0-0.285-0.066-0.428-0.208v-2.855c0.143-0.143 0.285-0.209 0.428-0.209 0.246 0 0.37 0.218 0.37 0.635z"></path>
+           </svg>
+           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="#666" height="22" width="22" xmlns="http://www.w3.org/2000/svg" style="color: rgb(102, 102, 102);">
+              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+           </svg>
+           <div class="flex ml-8 relative flex-wrap">
+              <div class="flex items-center bg-[#222] py-4 px-5 ph-btn relative left-3">
+                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#ecba00" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(220, 55, 55);">
+                    <path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"></path>
+                 </svg>
+                 <span class="ml-2 text-white text-md font-bold"> +91 94352 90052</span>
+              </div>
+              <div class="py-4 px-6 pl-10 bg-red-500 text-white font-bold sell-btn ">Sell your car</div>
+           </div>
+        </div>
+     </nav>
+
+     <!--logo section-->
+     <nav class="mx-auto flex justify-between items-center py-[30px] pb-12 px-6 max-w-[1200px] nav-small">
+        <img src="images/1.png" alt="logo" class="max-w-[228px] logo-small">
+        <div class="lg:hidden">
+           <div class="hamburger-react" aria-expanded="false" role="button" tabindex="0" style="cursor: pointer; height: 48px; position: relative; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; user-select: none; width: 48px; outline: none;">
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 9px; position: absolute; width: 15px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 50%; position: absolute; width: 15px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 9px; position: absolute; width: 15px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 1; transform: none;"></div>
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 50%; position: absolute; width: 15px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 1; transform: none;"></div>
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 9px; position: absolute; width: 15px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+              <div style="background: rgb(34, 34, 34); height: 3px; left: 50%; position: absolute; width: 15px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+           </div>
+        </div>
+        <div class="hidden lg:flex gap-12 ">
+           <div class="flex items-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#ecba00" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: rgb(220, 55, 55);">
+                 <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M464 256c0-114.87-93.13-208-208-208S48 141.13 48 256s93.13 208 208 208 208-93.13 208-208z"></path>
+                 <path d="M445.57 172.14c-16.06.1-14.48 29.73-34.49 15.75-7.43-5.18-12-12.71-21.33-15-8.15-2-16.5.08-24.55 1.47-9.15 1.58-20 2.29-26.94 9.22-6.71 6.67-10.26 15.62-17.4 22.33-13.81 13-19.64 27.19-10.7 45.57 8.6 17.67 26.59 27.26 46 26 19.07-1.27 38.88-12.33 38.33 15.38-.2 9.8 1.85 16.6 4.86 25.71 2.79 8.4 2.6 16.54 3.24 25.21 1.18 16.2 4.16 34.36 12.2 48.67l15-21.16c1.85-2.62 5.72-6.29 6.64-9.38 1.63-5.47-1.58-14.87-1.95-21s-.19-12.34-1.13-18.47c-1.32-8.59-6.4-16.64-7.1-25.13-1.29-15.81 1.6-28.43-10.58-41.65-11.76-12.75-29-15.81-45.47-13.22-8.3 1.3-41.71 6.64-28.3-12.33 2.65-3.73 7.28-6.79 10.26-10.34 2.59-3.09 4.84-8.77 7.88-11.18s17-5.18 21-3.95 8.17 7 11.64 9.56a49.89 49.89 0 0021.81 9.36c13.66 2 42.22-5.94 42-23.46-.04-8.4-7.84-20.1-10.92-27.96zM287.45 316.3c-5.33-22.44-35.82-29.94-52.26-42.11-9.45-7-17.86-17.81-30.27-18.69-5.72-.41-10.51.83-16.18-.64-5.2-1.34-9.28-4.14-14.82-3.41-10.35 1.36-16.88 12.42-28 10.92-10.55-1.42-21.42-13.76-23.82-23.81-3.08-12.92 7.14-17.11 18.09-18.26 4.57-.48 9.7-1 14.09.67 5.78 2.15 8.51 7.81 13.7 10.67 9.73 5.33 11.7-3.19 10.21-11.83-2.23-12.94-4.83-18.22 6.71-27.12 8-6.14 14.84-10.58 13.56-21.61-.76-6.48-4.31-9.41-1-15.86 2.51-4.91 9.4-9.34 13.89-12.27 11.59-7.56 49.65-7 34.1-28.16-4.57-6.21-13-17.31-21-18.83-10-1.89-14.44 9.27-21.41 14.19-7.2 5.09-21.22 10.87-28.43 3-9.7-10.59 6.43-14.07 10-21.46s-8.27-21.36-14.61-24.9l-29.81 33.43a41.52 41.52 0 008.34 31.86c5.93 7.63 15.37 10.08 15.8 20.5.42 10-1.14 15.12-7.68 22.15-2.83 3-4.83 7.26-7.71 10.07-3.53 3.43-2.22 2.38-7.73 3.32-10.36 1.75-19.18 4.45-29.19 7.21C95.34 199.94 93.8 172.69 86.2 162l-25 20.19c-.27 3.31 4.1 9.4 5.29 13 6.83 20.57 20.61 36.48 29.51 56.16 9.37 20.84 34.53 15.06 45.64 33.32 9.86 16.2-.67 36.71 6.71 53.67 5.36 12.31 18 15 26.72 24 8.91 9.09 8.72 21.53 10.08 33.36a305.22 305.22 0 007.45 41.28c1.21 4.69 2.32 10.89 5.53 14.76 2.2 2.66 9.75 4.95 6.7 5.83 4.26.7 11.85 4.68 15.4 1.76 4.68-3.84 3.43-15.66 4.24-21 2.43-15.9 10.39-31.45 21.13-43.35 10.61-11.74 25.15-19.69 34.11-33 8.73-12.98 11.36-30.49 7.74-45.68zm-33.39 26.32c-6 10.71-19.36 17.88-27.95 26.39-2.33 2.31-7.29 10.31-10.21 8.58-2.09-1.24-2.8-11.62-3.57-14a61.17 61.17 0 00-21.71-29.95c-3.13-2.37-10.89-5.45-12.68-8.7-2-3.53-.2-11.86-.13-15.7.11-5.6-2.44-14.91-1.06-20 1.6-5.87-1.48-2.33 3.77-3.49 2.77-.62 14.21 1.39 17.66 2.11 5.48 1.14 8.5 4.55 12.82 8 11.36 9.11 23.87 16.16 36.6 23.14 9.86 5.46 12.76 12.37 6.46 23.62zm-69.6-275.53c4.74 4.63 9.2 10.11 16.27 10.57 6.69.45 13-3.17 18.84 1.38 6.48 5 11.15 11.33 19.75 12.89 8.32 1.51 17.13-3.35 19.19-11.86 2-8.11-2.31-16.93-2.57-25.07 0-1.13.61-6.15-.17-7-.58-.64-5.42.08-6.16.1q-8.13.24-16.22 1.12a207.1 207.1 0 00-57.18 14.65c2.43 1.68 5.48 2.35 8.25 3.22zm171.94 56.18c8.49 0 17.11-3.8 14.37-13.62-2.3-8.23-6.22-17.16-15.76-12.72-6.07 2.82-14.67 10-15.38 17.12-.81 8.08 11.11 9.22 16.77 9.22zm-6.78 42.97c8.67 5.19 21.53 2.75 28.07-4.66 5.11-5.8 8.12-15.87 17.31-15.86a15.4 15.4 0 0110.82 4.41c3.8 3.93 3.05 7.62 3.86 12.54 1.81 11.05 13.66.63 16.75-3.65 2-2.79 4.71-6.93 3.8-10.56-.84-3.39-4.8-7-6.56-10.11-5.14-9-9.37-19.47-17.07-26.74-7.41-7-16.52-6.19-23.55 1.08-5.76 6-12.45 10.75-16.39 18.05-2.78 5.13-5.91 7.58-11.54 8.91-3.1.73-6.64 1-9.24 3.08-7.24 5.7-3.12 19.39 3.74 23.51z"></path>
+              </svg>
+              <div class="ml-2">
+                 <h3 class="relative ">Headoffice</h3>
+                 <p class="text-sm">Adabari, Guwahati</p>
+              </div>
+           </div>
+           <div class="flex items-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#ecba00" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: rgb(220, 55, 55);">
+                 <path fill="none" d="M0 0h24v24H0V0z"></path>
+                 <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+              </svg>
+              <div class="ml-2">
+                 <h3 class="relative ">Working</h3>
+                 <p class="text-sm">Service Available 24/7</p>
+              </div>
+           </div>
+           <div class="flex items-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#ecba00" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: rgb(220, 55, 55);">
+                 <path fill="none" d="M0 0h24v24H0V0z"></path>
+                 <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+              </svg>
+              <div class="ml-2">
+                 <h3 class="relative ">Email Us</h3>
+                 <p class="text-sm">info@abcd.com</p>
+              </div>
+           </div>
+        </div>
+     </nav>    
+     <!-- Navbar -->
+     <nav class=" relative hidden lg:block ">
+        <div class="nav-bottom navlinks z-55 h-16 bg-black flex justify-between items-center max-w-[1530px] ">
+           <ul class="font-semibold flex text-white gap-8 pl-8 nav-ct">
+              <li class="cursor-pointer hover:text-red-500">HOME</li>
+              <li class="cursor-pointer hover:text-red-500">AUTO LISTINGS</li>
+              <li class="cursor-pointer hover:text-red-500">OUR NEWS</li>
+              <li class="cursor-pointer hover:text-red-500">SHOP</li>
+              <li class="cursor-pointer hover:text-red-500">CONTACT US</li>
+           </ul>
+           <div class="search pr-16">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#fff" height="18" width="18" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255);">
+                 <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+              </svg>
+           </div>
+        </div>
+     </nav>    
+
+
+    <!-- Main Section -->
+    <div class="main-section text-white py-16">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <div class="carousel-image active" style="background-image: url('images/2.jpg');"></div>
+                <!-- <div class="carousel-image" style="background-image: url('images/aura2.webp');"></div>
+                <div class="carousel-image" style="background-image: url('images/aura.webp');"></div> -->
+            </div>
+        </div>
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold">Welcome</h1>
+            <p class="text-xl my-4">Refreshed Style, High Performance & Outstanding Technology</p>
+            <button class="col-md-3 btn btn-primary">Test Drive</button>
+        </div>
+    </div>
+    
+    <!-- Filter Section -->
+    <div class="filter-section relative bg-gray-100 py-8">
+        <svg class="svg-curve absolute -top-16" width="100%" data-height="70" height="70px">
+            <defs>
+                <pattern id="pix-decor-shape-145885930#f6f6f6" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="70" height="700" viewBox="0 0 100 1000">
+                    <polygon fill="#f6f6f6" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100 100,100"></polygon>
+                </pattern>
+            </defs>
+            <rect x="0" y="0" width="100%" data-height="70" height="70" fill="url(#pix-decor-shape-145885930#f6f6f6)"></rect>
+        </svg>
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+                <div class="mb-4">
+                    <label for="maker" class="font-bold block mb-1">Makers of vehicle</label>
+                    <select id="maker" class="form-control block w-full bg-white border border-gray-300 rounded-md py-2 px-3">
+                        <option>Audi</option>
+                        <option>BMW</option>
+                        <option>Mercedes</option>
+                        <option>Hyundai</option>
+                        <option>Maruti Suzuki</option>
+                        <option>Toyota</option>
+                        <option>Tata</option>
+                        <option>MG</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="model" class="font-bold block mb-1">Model</label>
+                    <select id="model" class="form-control block w-full bg-white border border-gray-300 rounded-md py-2 px-3">
+                        <option>All Models</option>
+                        <option>LXI</option>
+                        <option>VXI</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="condition" class="font-bold block mb-1">Condition</label>
+                    <select id="condition" class="form-control block w-full bg-white border border-gray-300 rounded-md py-2 px-3">
+                        <option>Vehicle Status</option>
+                        <option>New</option>
+                        <option>Used</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="fuel" class="font-bold block mb-1">Fuel Type</label>
+                    <select id="fuel" class="form-control block w-full bg-white border border-gray-300 rounded-md py-2 px-3">
+                        <option>All Fuel Types</option>
+                        <option>Petrol</option>
+                        <option>Diesel</option>
+                        <option>Electric</option>
+                    </select>
+                </div>
+                <div class="mt-4">
+                    <button class="bg-red-500 text-white text-center py-2 rounded-lg w-full">Find it Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    <!-- Welcome Section -->
+    <div class="welcome-section text-center py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">WELCOME TO <span class="text-red-500 typewriter">AUTODEALER</span></h2>
+            <div class="flex justify-center h-5 mt-8 mb-8 relative">
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+                <h4 class="text-sm font-semibold mx-1">Search Thousands of Cars from our Dealers Network</h4>
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+             </div>
+                         
+             <div class="wrapper mt-20">
+                <a href="#" class="box">
+                   <div class="single-box">
+                      <div class="box-content">
+                         <div class="sides side-1 flex flex-col justify-center items-center p-8 bg-[#f6f6f6] ">
+                            <div class=" bg-red-500 p-4 rounded-full mb-8">
+                               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#222" height="60" width="60" xmlns="http://www.w3.org/2000/svg" style="color: rgb(34, 34, 34);">
+                                  <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM8 13L4.06201 13.001C4.51365 16.6192 7.38163 19.4869 11 19.9381V16C9.34315 16 8 14.6569 8 13ZM19.938 13.001L16 13C16 14.6569 14.6569 16 13 16L13.001 19.938C16.6189 19.4864 19.4864 16.6189 19.938 13.001ZM14 12H10V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V12ZM12 4C7.92037 4 4.55396 7.05371 4.06189 11H8C8 10.4477 8.44772 10 9 10H15C15.5523 10 16 10.4477 16 11H19.9381C19.446 7.05371 16.0796 4 12 4Z"></path>
+                               </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold text-[#222] mb-4">Largest Dealership of Cars</h2>
+                            <p class="text-sm text-[#666]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sides side-2 p-8 bg-[#f6f6f6] ">
+                            <div class="content">
+                               <h2 class="text-xl font-semibold text-[#222] mb-4">Largest Dealership of Cars</h2>
+                               <p class="text-sm text-[#666]">An automobile is both a private and a public setting.</p>
+                               <button class="bg-white text-[#222] px-4 py-2  mx-auto mt-4 text-sm hover:underline">Read More</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </a>
+                <a href="#" class="box">
+                   <div class="single-box">
+                      <div class="box-content">
+                         <div class="sides side-1 flex flex-col justify-center items-center p-8 bg-[#fcfcfc] ">
+                            <div class=" bg-red-500 p-4 rounded-full mb-8">
+                               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                  <path fill="none" d="M0 0h24v24H0z"></path>
+                                  <path d="M20.94 11A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path>
+                               </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold mb-4">Offers Lower Car Prices</h2>
+                            <p class="text-sm text-[#666]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sides side-2 p-8 bg-[#fcfcfc] ">
+                            <div class="content">
+                               <h2 class="text-xl font-semibold text-[#222] mb-4">Offers Lower Car Prices</h2>
+                               <p class="text-sm text-[#666]">An automobile is both a private and a public setting.</p>
+                               <button class="bg-white text-[#222] px-4 py-2  mx-auto mt-4 text-sm hover:underline">Read More</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </a>
+                <a href="#" class="box">
+                   <div class="single-box">
+                      <div class="box-content">
+                         <div class="sides side-1 flex flex-col justify-center items-center p-8 bg-[#f6f6f6] ">
+                            <div class=" bg-red-500 p-4 rounded-full mb-8">
+                               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" color="#222" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: rgb(34, 34, 34);">
+                                  <path d="M511.984 36.128C230.016 36.128.639 265.536.639 547.504c0 177.152 89.68 339.185 239.903 433.408 14.944 9.472 34.688 4.88 44.097-10.096s4.88-34.72-10.096-44.095c-54.096-33.952-99.04-78.048-133.424-128.88l33.552-19.376c15.311-8.848 20.56-28.4 11.712-43.711-8.88-15.344-28.464-20.56-43.712-11.712l-33.6 19.391c-24.4-50.511-39.297-105.792-43.281-163.424h35.616c17.68 0 32-14.32 32-32s-14.32-32-32-32H65.95c4.24-58.687 19.776-114.304 44.56-164.592l32.16 18.56a31.745 31.745 0 0 0 15.97 4.288c11.055 0 21.807-5.744 27.743-16 8.847-15.312 3.6-34.88-11.712-43.713l-31.84-18.368c32.112-46.832 72.864-87.296 119.984-119.023l18.016 31.2c5.935 10.288 16.687 16 27.743 16 5.44 0 10.944-1.376 15.969-4.288 15.311-8.848 20.56-28.4 11.712-43.712l-17.953-31.072c49.329-23.792 103.68-38.656 160.976-42.816v39.872c0 17.68 14.32 32 32 32s32-14.32 32-32v-40c58.592 4.08 114.128 19.391 164.384 43.95l-17.36 30.049c-8.848 15.311-3.6 34.88 11.712 43.712a31.745 31.745 0 0 0 15.969 4.288c11.055 0 21.807-5.712 27.743-16l17.28-29.936a451.19 451.19 0 0 1 118.88 118.816l-29.968 17.312c-15.311 8.847-20.56 28.4-11.711 43.71 5.935 10.289 16.687 16 27.743 16 5.44 0 10.944-1.375 15.969-4.287l30.127-17.392C938.638 401.839 954 457.39 958.094 516H922.96c-17.68 0-32 14.32-32 32s14.32 32 32 32h35.12c-4.048 56.88-18.592 111.439-42.496 161.312l-31.68-18.288c-15.28-8.848-34.912-3.568-43.712 11.713-8.848 15.311-3.6 34.88 11.712 43.712l31.776 18.351c-35.103 52.24-81.44 97.393-137.359 131.824-15.055 9.28-19.712 29.008-10.464 44.032 6.065 9.808 16.529 15.216 27.28 15.216a31.896 31.896 0 0 0 16.753-4.752c152.464-93.904 243.472-256.784 243.472-435.632 0-281.952-229.408-511.36-511.376-511.36zm236.127 411.6c15.296-8.848 20.544-28.398 11.712-43.71-8.832-15.296-28.416-20.544-43.712-11.696L542.287 492.674c-9.28-5.248-19.856-8.496-31.28-8.496-35.28 0-63.84 28.591-63.84 63.807 0 35.248 28.576 63.84 63.84 63.84 35.28 0 63.84-28.592 63.84-63.84 0-.064-.016-.144-.016-.209z"></path>
+                               </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold text-[#222] mb-4">Multipoint Safety Checks</h2>
+                            <p class="text-sm text-[#666]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sides side-2 p-8 bg-[#f6f6f6] ">
+                            <div class="content">
+                               <h2 class="text-xl font-semibold text-[#222] mb-4">Multipoint Safety Checks</h2>
+                               <p class="text-sm text-[#666]">An automobile is both a private and a public setting, a bubble of intimacy exposed to the rush and push of the outside world .</p>
+                               <button class="bg-white text-[#222] px-4 py-2  mx-auto mt-4 text-sm hover:underline">Read More</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </a>
+             </div>        
+            </div>
+    </div>
+
+    <!--Types of vehicles-->
+    <section class="bg-black py-24 ">
+        <h1 class="text-5xl font-semibold text-white text-center leading-tight">Types of <span class="text-red-500">Vehicles</span></h1>
+        <div class="max-w-[1400px] flex flex-col gap-4  md:lg:grid md:lg:grid-cols-2 md:lg:grid-rows-2 md:lg:gap-4 mx-auto mt-24 relative box-border px-2 pb-8">
+           <a href="" class="w-[90%] md:lg:w-full hid mx-auto">
+              <div class="bg-white pt-4 pb-4 lg:pb-2 test flex flex-col  justify-center gap-8 items-center  md:lg:flex-row px-4">
+                 <div class=""><img src="images/i20.png" alt="sedan" class="w-[90%] md:w-44 lg:40 mx-auto" loading="lazy"></div>
+                 <div class="">
+                    <h1 class="uppercase text-base font-semibold skewTitle inline-block mb-2">hatchback</h1>
+                    <p>10 offers starting from Rs. 7,00,000 </p>
+                 </div>
+              </div>
+           </a>
+           <a href="" class="w-[90%] md:lg:w-full hid mx-auto">
+              <div class="bg-white pt-4 pb-4 lg:pb-2 test flex flex-col  justify-center gap-8 items-center md:lg:flex-row-reverse px-4">
+                 <div class=""><img src="images/i20.png" alt="sedan" class="w-[90%] md:w-44 lg:40 mx-auto" loading="lazy"></div>
+                 <div class="">
+                    <h1 class="uppercase text-base font-semibold skewTitle inline-block mb-2">sedan</h1>
+                    <p class="text-[#666] para">8 offers starting from Rs. 5,00,000 </p>
+                 </div>
+              </div>
+           </a>
+           <a href="" class="w-[90%] md:lg:w-full hid mx-auto">
+              <div class="bg-white pt-4 pb-4 lg:pb-2 test flex flex-col  justify-center gap-8 items-center  md:lg:flex-row px-4">
+                 <div class=""><img src="images/i20.png" alt="sedan" class="w-[90%] md:w-44 lg:40 mx-auto" loading="lazy"></div>
+                 <div class="">
+                    <h1 class="uppercase text-base font-semibold skewTitle inline-block mb-2">sedan</h1>
+                    <p class="text-[#666] para">5 offers starting from Rs. 4,00,000 </p>
+                 </div>
+              </div>
+           </a>
+           <a href="" class="w-[90%] md:lg:w-full hid mx-auto">
+              <div class="bg-white pt-4 pb-4 lg:pb-2 test flex flex-col  justify-center gap-8 items-center md:lg:flex-row-reverse px-4">
+                 <div class=""><img src="images/i20.png" alt="sedan" class="w-[90%] md:w-44 lg:40 mx-auto" loading="lazy"></div>
+                 <div class="">
+                    <h1 class="uppercase text-base font-semibold skewTitle inline-block mb-2">sedan</h1>
+                    <p class="text-[#666] para">3 offers starting from Rs. 8,00,000 </p>
+                 </div>
+              </div>
+           </a>
+        </div>
+     </section>
+    <section class="text-center py-8">
+        <div class="text-center py-4">
+            <h1 class="text-5xl font-semibold text-center">Latest <span class="text-red-500">offers</span></h1>
+            <div class="flex justify-center h-5 mt-4 relative mb-4">
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+               <h4 class="text-sm font-semibold mx-1">WE OFFER SOME BEST VEHICLE SERVICES</h4>
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+            </div>
+         </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+            <!-- Car 1 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+                    <div class="flex justify-around text-gray-600 mb-4">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+                    <!-- Car 2 -->
+                   <div class="offer overflow-hidden max-w-xs mx-auto">
+                    <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                    <div class="clip-background">
+                        <div class="clip"></div>
+                        <h2>Hyundai Aura</h2>
+                        <div class="svg-icon text-center mt-2">
+                            <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                        </div>
+                        <div class="flex justify-around text-gray-600 mb-4">    
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                                <span>3500</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-cogs mr-2 mx-auto"></i>
+                                <span>Manual</span>
+                            </div>
+                        </div>                    
+                        <div class="price cursor-pointer">
+                            Rs. 7,00,000
+                        </div>
+                    </div>
+                </div>
+                    <!-- Car 3 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+                    <div class="flex justify-around text-gray-600 mb-4">
+
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+            <!-- Car 4 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+
+                    <div class="flex justify-around text-gray-600 mb-4">
+
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--new section -->
+    <section class="text-center py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+            <!-- Car 1 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+
+                    <div class="flex justify-around text-gray-600 mb-4">
+
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+                   <!-- Car 2 -->
+                   <div class="offer overflow-hidden max-w-xs mx-auto">
+                    <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                    <div class="clip-background">
+                        <div class="clip"></div>
+                        <h2>Hyundai Aura</h2>
+                        <div class="svg-icon text-center mt-2">
+                            <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                        </div>    
+                        <div class="flex justify-around text-gray-600 mb-4">
+    
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                                <span>3500</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-cogs mr-2 mx-auto"></i>
+                                <span>Manual</span>
+                            </div>
+                        </div>                    
+                        <div class="price cursor-pointer">
+                            Rs. 7,00,000
+                        </div>
+                    </div>
+                </div>
+            <!-- Car 3 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+                    <div class="flex justify-around text-gray-600 mb-4">
+
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+            <!-- Car 4 -->
+            <div class="offer overflow-hidden max-w-xs mx-auto">
+                <img src="images/aura.jpg" alt="Hyundai Aura" class="w-full h-48 object-cover">
+                <div class="clip-background">
+                    <div class="clip"></div>
+                    <h2>Hyundai Aura</h2>
+                    <div class="svg-icon text-center mt-2">
+                        <img src="images/line.svg" alt="Icon" style="width: 20px; height: 20px; display: block; margin: 0 auto;margin-bottom: 10px;">
+                    </div>
+
+                    <div class="flex justify-around text-gray-600 mb-4">
+
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tachometer-alt mr-2 mx-auto"></i>
+                            <span>3500</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-gas-pump mr-2 mx-auto"></i>
+                            <span>Petrol</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cogs mr-2 mx-auto"></i>
+                            <span>Manual</span>
+                        </div>
+                    </div>                    
+                    <div class="price cursor-pointer">
+                        Rs. 7,00,000
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--our services-->
+    <div class="services-section our-s">
+        <div class="text-center py-4">
+            <h1 class="text-5xl font-semibold text-white text-center">Our <span class="text-red-500">Services</span></h1>
+            <div class="flex justify-center h-5 mt-4 relative mb-4">
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+               <h4 class="text-sm font-semibold mx-1 text-white">WE OFFER SOME BEST VEHICLE SERVICES</h4>
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+            </div>
+         </div>
+                 
+         <div class="flex justify-center mt-12 max-w-6xl mx-auto">
+            <div class="carousel3-wrapper">
+                <div id="carousel3" class="carousel3" >
+                    <!-- Member 1 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 member-color pr-16 ml-2">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 1</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 pr-16">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 2</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 pr-16">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 3</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 pr-16">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 4</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                    <!-- Member 5 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 pr-16">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 5</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                    <!-- Member 6 -->
+                    <div class="carousel3-item bg-white overflow-hidden member-card5 pr-16">
+                        <div class="image-container">
+                            <div class="ser">
+                                <img src="images/price.svg" alt="Vehicle" class="w-16 h-16">
+                                <div class="flex flex-col items-center">
+                                  <h3 class="text-lg font-semibold text-black">Vehicle</h3>
+                                  <h4 class="text-sm text-black">INSPECTION</h4>
+                                </div>                                            
+                            </div>
+                            <div class="member-info-hover">
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="font-bold text-xl">Member 6</h3>
+                            <p class="text-gray-500">PARTNER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+
+    <!--about us-->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <div class="text-center py-4">
+            <h1 class="text-5xl font-semibold text-[#222] text-center">About <span class="text-red-500">Autodealer</span></h1>
+            <div class="flex justify-center h-5 mt-4 relative">
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+               <h4 class="text-sm font-semibold mx-1 text-[#222]">SOMETHING ABOUT COMPANY</h4>
+               <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+            </div>
+            <div class="flex flex-col items-center mt-4 mb-8">
+               <div class=" h-[2px] bg-red-500 w-[50px] lines"></div>
+               <div class=" h-[2px] bg-red-500 w-[50px] my-1 translate-x-2.5 lines"></div>
+               <div class=" h-[2px] bg-red-500 w-[50px] translate-x-5 lines"></div>
+            </div>
+         </div>
+
+        <!-- Main Content Section -->
+        <div class="flex flex-wrap items-center">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold mb-4">We are a Trusted Name in Auto Industry</h2>
+                <h3 class="text-xl font-semibold text-gray-700 mb-4">Visited by Million of Car Buyers Every Month!</h3>
+                <p class="text-gray-600 mb-6" style="text-align: justify; padding-right: 20px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni nobis ipsum facilis repellat sapiente adipisci provident aut, animi voluptatem odit voluptates ut cum, perspiciatis fugiat repudiandae, molestiae eum ratione!Lorem
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="text-red-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-3.866 0-7 2.238-7 5s3.134 5 7 5 7-2.238 7-5-3.134-5-7-5zm0 0v10m4-6h-8m8 0a4 4 0 00-8 0"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold">Affordable Auto Prices</p>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-red-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 6a9 9 0 11-12-12 9 9 0 0112 12zm2-12h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold">10 Years in Business</p>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-red-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12c0 3.866-3.582 7-8 7-1.82 0-3.528-.615-4.85-1.652a4 4 0 00-5.64-.152C1.775 18.148 1 17.248 1 16c0-4.418 3.582-8 8-8 1.82 0 3.528.615 4.85 1.652a4 4 0 005.64.152c.775-.692 1.51-.592 1.51-.602z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold">Affordable Auto Prices</p>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                <img src="images/aura3.jpg" alt="Car" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    <!--statistics-->
+    <div class="types-of-vehicles">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-wrap justify-center">
+            <!-- Card 1 -->
+            <div class="card hover-card group">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center relative">
+                    <div class="text-red-500 mb-4">
+                        <img src="images/office.svg" alt="Icon 1" class="w-12 h-12 mx-auto mt-8">
+                    </div>
+                    <h3 class="text-2xl font-bold">1000+</h3>
+                    <p class="text-gray-600">Vehicles we sell</p>
+                    <div class="hidden-tile hidden absolute inset-0 bg-red-500 text-white flex items-center justify-center rounded-lg">
+                        <p class="text-lg font-bold py-14">More Details</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card hover-card group">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center relative">
+                    <div class="text-red-500 mb-4">
+                        <img src="images/office.svg" alt="Icon 2" class="w-12 h-12 mx-auto mt-8">
+                    </div>
+                    <h3 class="text-2xl font-bold">25200+</h3>
+                    <p class="text-gray-600">Vehicles we sold</p>
+                    <div class="hidden-tile hidden absolute inset-0 bg-red-500 text-white flex items-center justify-center rounded-lg">
+                        <p class="text-lg font-bold py-14">More Details</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card hover-card group">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center relative">
+                    <div class="text-red-500 mb-4">
+                        <img src="images/office.svg" alt="Icon 3" class="w-12 h-12 mx-auto mt-8">
+                    </div>
+                    <h3 class="text-2xl font-bold">200+</h3>
+                    <p class="text-gray-600">Vehicles we sell annually</p>
+                    <div class="hidden-tile hidden absolute inset-0 bg-red-500 text-white flex items-center justify-center rounded-lg">
+                        <p class="text-lg font-bold py-14">More Details</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--photo gallery-->
+        <div class="text-center py-4">
+            <h1 class="text-5xl font-semibold text-center">Photo <span class="text-red-500">Gallery</span></h1>
+            <div class="flex justify-center h-5 mt-4 relative">
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+                <h4 class="text-sm font-semibold mx-1 text-[#222]">IMAGES OF VEHICLES WE HAVE</h4>
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+            </div>
+            <div class="flex flex-col items-center mt-4">
+            <div class=" h-[2px] bg-red-500 w-[50px] lines"></div>
+            <div class=" h-[2px] bg-red-500 w-[50px] my-1 translate-x-2.5 lines"></div>
+            <div class=" h-[2px] bg-red-500 w-[50px] translate-x-5 lines"></div>
+            </div>
+        </div>
+        <div class="max-w-8xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Image 1 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura.jpg" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-lg font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>            <!-- Image 2 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura2.webp" alt="Car" class="w-full h-auto  shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura2.webp" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura.jpg" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura2.webp" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura2.webp" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 7 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura.jpg" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+            <!-- Image 8 -->
+            <div class="relative hover-overlay">
+                <img src="images/aura.jpg" alt="Car" class="w-full h-auto shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-75 flex flex-col items-start justify-end p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <p class="text-white text-xl font-bold">Hyundai</p>
+                    <p class="text-white text-sm">Abc</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--team members-->
+    <div class="text-center py-4">
+        <h1 class="text-5xl font-semibold text-[#222] text-center">Team <span class="text-red-500">Members</span></h1>
+        <div class="flex justify-center h-5 mt-4 relative">
+           <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+           <h4 class="text-sm font-semibold mx-1 text-[#222]">WORKED OF AUTODEALER</h4>
+           <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+        </div>
+        <div class="flex flex-col items-center mt-8">
+           <div class=" h-[2px] bg-red-500 w-[50px] lines"></div>
+           <div class=" h-[2px] bg-red-500 w-[50px] my-1 translate-x-2.5 lines"></div>
+           <div class=" h-[2px] bg-red-500 w-[50px] translate-x-5 lines"></div>
+        </div>
+     </div>
+
+     <div class="flex justify-center mt-12 max-w-6xl mx-auto">
+        <div class="carousel3-wrapper">
+            <div id="carousel3" class="carousel3">
+                <!-- Member 1 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16 ml-2">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 1</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 2</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 3</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 4</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+                <!-- Member 5 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 5</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+                <!-- Member 6 -->
+                <div class="carousel3-item bg-white overflow-hidden member-card2 pr-16">
+                    <div class="image-container">
+                        <img class="photo w-full h-56 object-cover" src="images/member.png" alt="img">
+                        <div class="member-info-hover">
+                            <div class="flex justify-center space-x-4 mt-2">
+                                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-xl">Member 6</h3>
+                        <p class="text-gray-500">PARTNER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex justify-center bg-gray-100 py-8">
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+        <div class="flex items-center justify-center h-24 bg-gray-200">
+            <img class="h-12" src="https://via.placeholder.com/150x50" alt="Turpial Creative">
+        </div>
+    </div>
+</div>
+
+<script>
+    const carousel3 = document.getElementById('carousel3');
+    const cards = Array.from(carousel3.getElementsByClassName('carousel3-item'));
+    let currentIndex = 0;
+
+    const updateItemWidth = () => {
+        const screenWidth = window.innerWidth;
+        let itemsVisible = 3;
+        if (screenWidth <= 480) {
+            itemsVisible = 1;
+        } else if (screenWidth <= 768) {
+            itemsVisible = 2;
+        }
+        const itemWidth = carousel3.offsetWidth / itemsVisible;
+        return itemWidth;
+    };
+
+    const moveToNext = () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        const itemWidth = updateItemWidth();
+        carousel3.style.transition = 'transform 0.5s ease-in-out';
+        carousel3.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    };
+
+    const moveToPrev = () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        const itemWidth = updateItemWidth();
+        carousel3.style.transition = 'transform 0.5s ease-in-out';
+        carousel3.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    };
+
+    setInterval(moveToNext, 3000);
+
+    window.addEventListener('resize', () => {
+        const itemWidth = updateItemWidth();
+        carousel3.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    });
+</script>
+
+
+
+    <!--Testimonials-->
+    <div class="video-container">
+        <video autoplay muted loop class="video-bg">
+            <source src="video/testimonials.mp4" type="video/mp4">
+        </video>
+    
+        <div class="overlay"></div>
+    
+        <div class="container mx-auto py-8 sm:py-16 px-4 sm:px-0 content">
+            <h1 class="text-2xl sm:text-4xl font-bold mb-4 text-center">Clients <span class="text-red-500">Testimonials</span></h1>
+            <div class="flex justify-center h-5 mt-4 relative mb-8">
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+                <h4 class="text-sm font-semibold mx-1 text-white">SATISFIED CLIENTS EVERYWHERE</h4>
+                <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+             </div>
+
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+                <div class="testi-one bg-white text-gray-800 p-4 sm:p-8 rounded-lg shadow-md max-w-full sm:max-w-sm w-full text-center">
+                    <div class="text-center mb-4">
+                        <img src="images/me.JPG" alt="john" class="w-12 sm:w-16 h-12 sm:h-16 rounded-full mx-auto">
+                    </div>
+                    <h2 class="text-lg sm:text-xl font-semibold">John</h2>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">CUSTOMER</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia magni earum voluptas sed iusto nostrum molestiae animi, beatae laudantium aliquam vel corporis obcaecati voluptatem alias, quod aliquid possimus. Illum!</p>
+                    <div class="mt-4 text-gray-600">
+                        <img src="images/quotation.svg" class="h-4 w-4 sm:h-6 sm:w-6 mx-auto" alt="SVG Image">
+                    </div>
+                </div>
+    
+                <div class="bg-white text-gray-800 p-4 sm:p-8 rounded-lg shadow-md max-w-full sm:max-w-sm w-full text-center">
+                    <div class="text-center mb-4">
+                        <img src="images/me.JPG" alt="john" class="w-12 sm:w-16 h-12 sm:h-16 rounded-full mx-auto">
+                    </div>
+                    <h2 class="text-lg sm:text-xl font-semibold">John</h2>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-4">CUSTOMER</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia magni earum voluptas sed iusto nostrum molestiae animi, beatae laudantium aliquam vel corporis obcaecati voluptatem alias, quod aliquid possimus. Illum!</p>
+                    <div class="mt-4 text-gray-600">
+                        <img src="images/quotation.svg" class="h-4 w-4 sm:h-6 sm:w-6 mx-auto" alt="SVG Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--latest news-->
+    <section class="bg-white relative py-14">
+        <div class="section_curve hidden md:block">
+           <svg width="100%" data-height="70" height="70px">
+              <defs>
+                 <pattern id="pix-decor-shape-145885930#fff" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="70" height="700" viewBox="0 0 100 1000">
+                    <polygon fill="#fff" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100  100,100 "></polygon>
+                 </pattern>
+              </defs>
+              <rect x="0" y="0" width="100%" data-height="70" height="70" fill="url(#pix-decor-shape-145885930#fff)"></rect>
+           </svg>
+        </div>
+        <div class="text-center py-4">
+           <h1 class="text-5xl font-semibold text-[#222] text-center">Latest <span class="text-red-500">News</span></h1>
+           <div class="flex justify-center h-5 mt-4 relative">
+              <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+              <h4 class="text-sm font-semibold mx-1 text-[#222]">READ FROM OUR BLOG</h4>
+              <span class="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style="top: 50%;"></span>
+           </div>
+           <div class="flex flex-col items-center mt-8">
+              <div class=" h-[2px] bg-red-500 w-[50px] lines"></div>
+              <div class=" h-[2px] bg-red-500 w-[50px] my-1 translate-x-2.5 lines"></div>
+              <div class=" h-[2px] bg-red-500 w-[50px] translate-x-5 lines"></div>
+           </div>
+        </div>
+        <div class="max-w-[1200px] mx-auto mt-16 flex justify-center">
+           <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+              <div class="bg-white w-80 border border-solid border-[#eee] overflow-hidden">
+                 <img src="images/aura2.webp" alt="blog" class=" slide " loading="lazy" style="min-width: 120%;">
+                 <div class="p-2">
+                    <h1 class="text-[#222] text-md font-semibold  py-2 tracking-widest border-b border-solid border-[#eee]">Title of the News</h1>
+                    <p class="text-[#222] text-xs font-light tracking-wide leading-8 py-4 border-b border-solid border-[#eee]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque sed quis assumenda architecto illum fugit voluptates soluta error recusandae, sint blanditiis, minima maiores nisi optio tenetur, harum modi nihil.</p>
+                    <div class="flex justify-between text-[#222] font-light pt-2">
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+                          </svg>
+                          By admin
+                       </p>
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path>
+                          </svg>
+                          May 12, 2024
+                       </p>
+                    </div>
+                 </div>
+              </div>
+              <div class="bg-white w-80 border border-solid border-[#eee] overflow-hidden">
+                 <img src="images/aura2.webp" alt="blog" class=" slide " loading="lazy" style="min-width: 120%;">
+                 <div class="p-2">
+                    <h1 class="text-[#222] text-md font-semibold  py-2 tracking-widest border-b border-solid border-[#eee]">Title of the News</h1>
+                    <p class="text-[#222] text-xs font-light tracking-wide leading-8 py-4 border-b border-solid border-[#eee]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique voluptate in, ut esse amet error sunt fugit beatae quos maiores at? Quia, optio quas. Suscipit sapiente error odio incidunt?</p>
+                    <div class="flex justify-between text-[#222] font-light pt-2">
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+                          </svg>
+                          By admin
+                       </p>
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path>
+                          </svg>
+                          April 20, 2024
+                       </p>
+                    </div>
+                 </div>
+              </div>
+              <div class="bg-white w-80 border border-solid border-[#eee] overflow-hidden">
+                 <img src="images/aura2.webp" alt="blog" class=" slide " loading="lazy" style="min-width: 120%;">
+                 <div class="p-2">
+                    <h1 class="text-[#222] text-md font-semibold  py-2 tracking-widest border-b border-solid border-[#eee]">Title of the News</h1>
+                    <p class="text-[#222] text-xs font-light tracking-wide leading-8 py-4 border-b border-solid border-[#eee]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique voluptate in, ut esse amet error sunt fugit beatae quos maiores at? Quia, optio quas. Suscipit sapiente error odio incidunt?</p>
+                    <div class="flex justify-between text-[#222] font-light pt-2">
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+                          </svg>
+                          By admin
+                       </p>
+                       <p class="text-xs flex gap-1 items-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path>
+                          </svg>
+                          February 15, 2024
+                       </p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+    <!--footer-->
+    
+    <footer class="bg-black">
+        <div class="pb-24">
+           <div class="max-w-[1200px] mx-auto">
+              <div class="hidden md:lg:block">
+                 <div class="flex relative ">
+                    <div class="w-5/12 bg-red-500 p-4 sub">
+                       <h1 class="text-center text-2xl font-medium text-white sub-text">Subscribe to Newsletter</h1>
+                    </div>
+                    <div class="w-7/12 bg-[#f6f6f6]  mail">
+                       <div class="text-md text-[#666] p-2 flex justify-center relative">
+                          <input type="email" placeholder=" Enter your email address" class="w-10/12 py-2 bg-transparent border-b-2 border-[#eee]">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#666" class="absolute right-16 top-4 cursor-pointer" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(102, 102, 102);">
+                             <rect width="416" height="320" x="48" y="96" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="40" ry="40"></rect>
+                             <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"></path>
+                          </svg>              
+                          <!-- <div class="bg-black p-8 absolute  w-16 email-after"></div> -->
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="flex flex-wrap justify-evenly mx-auto py-8">
+                 <div class="p-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                    <h1 class="text-base font-semibold text-white mb-4 uppercase footer-b">Auto dealer</h1>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">we offer premium services <br>PHONE: +91 70855 15468<br>EMAIL: info@abcd.com</p>
+                    <div class="flex gap-4 mt-4">
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" color="#ccc" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(204, 204, 204);">
+                          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                       </svg>
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#ccc" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(204, 204, 204);">
+                          <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                       </svg>
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" color="#ccc" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(204, 204, 204);">
+                          <g></g>
+                          <path d="M8.301 6.422c0.437 0 0.769-0.161 1.006-0.484 0.181-0.237 0.265-0.617 0.265-1.12v-1.66c0-0.503-0.084-0.873-0.265-1.11-0.238-0.321-0.57-0.483-1.006-0.483-0.428 0-0.76 0.161-0.995 0.483-0.181 0.238-0.266 0.608-0.266 1.111v1.66c0 0.503 0.085 0.873 0.266 1.12 0.235 0.322 0.567 0.483 0.995 0.483zM7.893 2.988c0-0.436 0.133-0.654 0.408-0.654 0.285 0 0.408 0.218 0.408 0.654v1.992c0 0.437-0.123 0.664-0.408 0.664-0.275 0-0.408-0.228-0.408-0.664v-1.992zM10.35 6.071c-0.048-0.143-0.075-0.37-0.075-0.711v-3.738h0.863v3.481c0 0.2 0 0.313 0.010 0.333 0.019 0.133 0.085 0.208 0.199 0.208 0.17 0 0.35-0.133 0.54-0.408v-3.614h0.863v4.734h-0.863v-0.522c-0.341 0.398-0.663 0.588-0.978 0.588-0.275 0-0.474-0.113-0.559-0.351zM13.633 11.811v0.436h-0.854v-0.436c0-0.427 0.143-0.646 0.427-0.646 0.284 0.001 0.427 0.219 0.427 0.646zM4.354 1.774c-0.208-0.588-0.416-1.186-0.617-1.774h1.007l0.673 2.495 0.645-2.495h0.968l-1.148 3.785v2.571h-0.948v-2.571c-0.086-0.465-0.276-1.129-0.58-2.011zM15.283 8.785c-0.171-0.75-0.788-1.3-1.518-1.385-1.746-0.19-3.511-0.19-5.266-0.19s-3.52 0-5.256 0.19c-0.738 0.085-1.346 0.635-1.526 1.385-0.237 1.062-0.247 2.22-0.247 3.32 0 1.091 0 2.257 0.247 3.32 0.171 0.75 0.788 1.3 1.518 1.376 1.745 0.199 3.51 0.199 5.265 0.199s3.52 0 5.266-0.199c0.729-0.076 1.337-0.626 1.518-1.376 0.237-1.062 0.247-2.229 0.247-3.32-0.001-1.1-0.001-2.258-0.248-3.32zM5.483 9.743h-1.014v5.398h-0.949v-5.398h-0.997v-0.892h2.96v0.892zM8.045 15.141h-0.845v-0.512c-0.342 0.389-0.664 0.579-0.968 0.579-0.274 0-0.474-0.114-0.55-0.351-0.048-0.142-0.076-0.361-0.076-0.692v-3.709h0.845v3.453c0 0.2 0 0.304 0.009 0.333 0.020 0.132 0.086 0.199 0.199 0.199 0.172 0 0.352-0.132 0.541-0.398v-3.586h0.845v4.684zM11.271 13.737c0 0.437-0.020 0.749-0.086 0.948-0.104 0.342-0.342 0.522-0.674 0.522-0.303 0-0.598-0.171-0.883-0.522v0.456h-0.843v-6.29h0.843v2.059c0.275-0.342 0.57-0.512 0.883-0.512 0.332 0 0.57 0.18 0.674 0.531 0.066 0.19 0.086 0.502 0.086 0.939v1.869zM14.477 12.959h-1.698v0.825c0 0.437 0.143 0.654 0.437 0.654 0.209 0 0.332-0.113 0.38-0.341 0.009-0.047 0.019-0.237 0.019-0.579h0.863v0.124c0 0.275 0 0.465-0.019 0.55-0.020 0.189-0.096 0.36-0.199 0.512-0.229 0.332-0.579 0.503-1.024 0.503-0.446 0-0.779-0.161-1.025-0.484-0.18-0.228-0.275-0.598-0.275-1.101v-1.641c0-0.503 0.086-0.863 0.266-1.101 0.247-0.323 0.579-0.484 1.016-0.484 0.428 0 0.759 0.161 1.005 0.484 0.172 0.237 0.257 0.597 0.257 1.101v0.978zM10.426 11.801v2.002c0 0.427-0.124 0.635-0.37 0.635-0.143 0-0.285-0.066-0.428-0.208v-2.855c0.143-0.143 0.285-0.209 0.428-0.209 0.246 0 0.37 0.218 0.37 0.635z"></path>
+                       </svg>
+                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="#ccc" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(204, 204, 204);">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                       </svg>
+                    </div>
+                 </div>
+                 <div class="p-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                    <h1 class="text-base font-semibold text-white mb-4 uppercase footer-b">Quick Links</h1>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Home</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Home</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Home</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Home</p>
+                 </div>
+                 <div class="p-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                    <h1 class="text-base font-semibold text-white mb-4 uppercase footer-b">Our terms</h1>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Support</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Support</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Support</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Support</p>
+                 </div>
+                 <div class="p-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                    <h1 class="text-base font-semibold text-white mb-4 uppercase footer-b">Showroom</h1>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">India</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">China</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">London</p>
+                    <p class="text-[#ccc] text-sm tracking-wide leading-8">Berlin</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="relative">
+           <div class="section_curve hidden md:block">
+              <svg width="100%" data-height="70" height="70px">
+                 <defs>
+                    <pattern id="pix-decor-shape-145885930#f6f6f6" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="70" height="700" viewBox="0 0 100 1000">
+                       <polygon fill="#f6f6f6" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100  100,100 "></polygon>
+                    </pattern>
+                 </defs>
+                 <rect x="0" y="0" width="100%" data-height="70" height="70" fill="url(#pix-decor-shape-145885930#f6f6f6)"></rect>
+              </svg>
+           </div>
+           <div class="text-center text-sm text-[#666] tracking-wider pb-8 pt-4 bg-[#f6f6f6]">Copyright 2024</div>
+        </div>
+     </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/sliding.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.querySelector('.navbar11-toggler').addEventListener('click', function() {
+            document.getElementById('navbar11Nav').classList.toggle('show');
+        });
+    </script>
+
+    <!-- Bootstrap CSS and JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    // JavaScript for infinite carousel2 movement
+    const carousel2 = document.getElementById('carousel2');
+    const card2s = Array.from(carousel2.getElementsByClassName('card2'));
+    const card2Width = card2s[0].clientWidth + 20; // Calculate card2 width including margin-right
+    let currentIndex = 0;
+
+    // Function to move carousel2 to the right
+    const moveToNext = () => {
+      currentIndex++;
+      carousel2.style.transition = 'transform 0.5s ease-in-out';
+      carousel2.style.transform = `translateX(-${currentIndex * card2Width}px)`;
+      // Move the first card to the end after it's out of view
+      if (currentIndex === card2s.length - 3) {
+        setTimeout(() => {
+          const firstcard2 = card2s.shift();
+          carousel2.appendChild(firstcard2);
+          carousel2.style.transition = 'none';
+          carousel2.style.transform = `translateX(0)`;
+          card2s.push(firstcard2);
+          currentIndex--;
+        }, 500);
+      }
+    };
+    // Automatically move carousel2 every 5 seconds
+    setInterval(moveToNext, 5000);
+  </script>
+
+</body>
+</html>

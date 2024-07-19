@@ -1,0 +1,58 @@
+.hamburger-react {
+    @apply cursor-pointer h-12 relative transition-all duration-400 ease-[cubic-bezier(0,0,0,1)] select-none w-12 outline-none;
+  }
+  
+  .bar {
+    @apply bg-gray-800 h-[3px] absolute w-[15px] transition-all duration-400 ease-[cubic-bezier(0,0,0,1)];
+  }
+  
+  .top {
+    @apply top-[13px];
+  }
+  
+  .middle {
+    @apply top-[23px];
+  }
+  
+  .bottom {
+    @apply top-[33px];
+  }
+  
+  .right {
+    @apply left-1/2;
+  }
+  
+  .bar:not(.right) {
+    @apply left-[9px];
+  }
+  
+  /* Styles for the open state */
+  .hamburger-react[data-state="open"] .top {
+    transform: rotate(45deg);
+    top: 23px;
+    left: 10px;
+  }
+  
+  .hamburger-react[data-state="open"] .top.right {
+    transform: rotate(-45deg);
+    top: 23px;
+    left: 25px;
+  }
+  
+  .hamburger-react[data-state="open"] .middle, 
+  .hamburger-react[data-state="open"] .middle.right {
+    opacity: 0;
+  }
+  
+  .hamburger-react[data-state="open"] .bottom {
+    transform: rotate(-45deg);
+    top: 23px;
+    left: 10px;
+  }
+  
+  .hamburger-react[data-state="open"] .bottom.right {
+    transform: rotate(45deg);
+    top: 23px;
+    left: 25px;
+  }
+  

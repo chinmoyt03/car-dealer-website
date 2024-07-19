@@ -1,0 +1,73 @@
+        .member-card2 {
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            transition: opacity 0.3s;
+        }
+        .member-info-hover {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 1);
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .image-container:hover {
+            opacity: 0.8;
+        }
+        .image-container:hover .member-info-hover {
+            opacity: 0.8;
+        }
+        .photo:hover{
+            opacity: 0.8;
+        }
+        /* Additional Styles for carousel3 */
+        .carousel3-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel3 {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel3-item {
+            flex: 0 0 33.333%; /* Three items visible at a time */
+            max-width: 33.333%; /* Three items visible at a time */
+        }
+        @media (max-width: 768px) {
+            .carousel3-item {
+                flex: 0 0 50%; /* Two items visible at a time */
+                max-width: 50%;
+            }
+        }
+        @media (max-width: 480px) {
+            .carousel3-item {
+                flex: 0 0 100%; /* One item visible at a time */
+                max-width: 100%;
+            }
+        }
+
+        .member-card5 {
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: black !important;
+        }
+        
+        .ser{
+            background-color: white;
+            height: 250px;
+        }
